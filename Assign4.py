@@ -18,3 +18,27 @@ invitations to send.
 This program will require you to incorporate everything we
 have learned so far.
 """
+
+partylist = ["Matthew Turner","Marcus Cone","Sebastiaan Ter Keurs", "Landon Roberts", "Kieran Stuyt", "Emmett Rossler"]
+
+for i in partylist:
+    x = input("enter in a name")
+    x = str(x)
+   
+    if x in partylist:
+        print("that name is on the list")
+        break
+    
+    else:
+        print("that name is not on the list")
+        partylist.append(x)
+        break
+    
+
+    
+    
+partylist.sort()  
+y = len(partylist)
+    
+
+print(f"You are inviting {partylist} to the party meaning you have {y} guests coming to the party")

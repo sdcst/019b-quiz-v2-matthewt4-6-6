@@ -6,3 +6,10 @@ but you should try to incorporate a for loop and use 1 print
 statement instead.
 """
 numbers = [3,4,6,1,3,6,12,33,15,2,22,9,17]
+
+for i in numbers:
+    numbers.sort()
+
+print(numbers[-1])
+print(numbers[-2])
+print(numbers[-3])
